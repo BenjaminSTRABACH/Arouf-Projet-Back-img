@@ -8,7 +8,7 @@ from django.core import serializers
 from .models import Picture
 # Create your views here.
 def getAllPictures(request):
-    queryset = Picture.all().order_by('name')
+    queryset = Picture.all().order_by('id')
     if queryset:
         qs_json = serializers.serialize('json', queryset, fields=('id', 'file', 'name'))
         return HttpResponse(qs_json, content_type='application/json')
@@ -34,3 +34,7 @@ def sendPicture(request):
         return HttpResponse(e)
 
     return HttpResponse("Image ajoutée")
+
+
+def errorTest(request):
+    div_zero = 1/0

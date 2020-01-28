@@ -1,0 +1,5 @@
+Django==3.0
+pytest
+sentry-sdk==0.13.4
+djangorestframework
+Pillow

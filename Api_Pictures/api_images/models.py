@@ -7,6 +7,6 @@ class Picture(models.Model):
     name = models.TextField(max_length=30)
 
     @classmethod
-    def create(cls, file=None, name=None):
+    def create(cls, file=None, name='Unnamed'):
         picture = cls(file=file, name=name)
         return picture

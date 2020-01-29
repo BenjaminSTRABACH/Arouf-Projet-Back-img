@@ -2,6 +2,8 @@ from django.urls import path
 
 from . import views
 
+app_name='api_img'
+
 urlpatterns = [
     path('get/all', views.getAllPictures, name='getAllPictures'),
     path('get/', views.getPicture, name='getPicture'),

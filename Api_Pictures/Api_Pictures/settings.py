@@ -27,12 +27,13 @@ SECRET_KEY = 'iu@f)jthnl5&dshqsf_07stl&_^y4^*u6%=7+o-@$&r-k^*h8l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['testserver', 'localhost', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'api_images.apps.ApiImagesConfig',
     'django.contrib.admin',
     'django.contrib.auth',

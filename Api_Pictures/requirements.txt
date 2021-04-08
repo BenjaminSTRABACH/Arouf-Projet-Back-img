@@ -1,4 +1,4 @@
-Django==3.0
+Django==3.0.14
 pytest
 sentry-sdk==0.13.4
 djangorestframework
